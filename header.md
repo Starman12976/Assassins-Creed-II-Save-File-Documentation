@@ -3,7 +3,7 @@
 
 ---
 
-The Assassin's Creed II save file header appears at the very beginning of each save file. It directly precedes the game's root container.
+The Assassin's Creed II save file header appears at the very beginning of each save file. It directly precedes the file's body and root container.
 
 ## **Structure**
 
