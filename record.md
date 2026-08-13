@@ -14,7 +14,7 @@ Every record has five parts: A size, a primary ID, a secondary ID, a type flag, 
 - `11 00 00 00` - Size, meaning 17 bytes in hex. This value itself is not included in the size
 - `12 99 7B F7` - Primary ID. In this case, it is a "value" ID
 - `00 00 00 00 00 00` - Secondary ID. In most records, this is all 0, but not always
-- `07 00 0B` - Type flag. This one means "unsigned integer". All type flags end with `0B`
+- `07 00 0B` - Type flag. This one means "integer". All type flags end with `0B`
 - `20 A1 07 00` - Payload. This value is 500,000 florins in little-endian
 
 #### Below are a few more examples:
