@@ -9,9 +9,9 @@ Records are the simplest element of the Assassin's Creed II file system. They ac
 
 Every record has five parts: A size, a primary ID, a secondary ID, a type flag, and a payload. Shown below is an example record of where the Florin count is stored, with each part labeled:
 
-> **Florins Value Record:** `12 99 7B F7 | 00 00 00 00 00 00 00 | 07 00 0B | 20 A1 07 00 | 11 00 00 00`
+> **Florins Value Record:** `11 00 00 00 | 12 99 7B F7 | 00 00 00 00 00 00 00 | 07 00 0B | 20 A1 07 00`
 
-- `11 00 00 00` - Size, meaning 17 bytes in hex. This value itself is not included in the size.
+- `11 00 00 00` - Size, meaning 17 bytes in hex. This value itself is not included in the size
 - `12 99 7B F7` - Primary ID. In this case, it is a "value" ID
 - `00 00 00 00 00 00` - Secondary ID. In most records, this is all 0, but not always
 - `07 00 0B` - Type flag. This one means "unsigned integer". All type flags end with `0B`
@@ -25,7 +25,7 @@ Every record has five parts: A size, a primary ID, a secondary ID, a type flag, 
 
 ## **Type Flags**
 
-Below is a list of all recorded type flags, along with a description if it is known:
+Below is a list of recorded type flags, along with a description if it is known:
 
 > * `07 00 0B` - Likely unsigned integer, 4-bytes
 > * `19 00 0B` - Appears to be used for a 4-byte integer + some 4-byte hash
